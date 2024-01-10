@@ -26,12 +26,12 @@
 # del talaba_0['yosh'] # yosh degan kalit so'z (va qiymatni) o'chiramiz
 # print(talaba_0)
 
-telefonlar = {
-    'ali':'iphone x',
-    'vali':'galaxy s9',
-    'olim':'mi 10 pro',
-    'orif':'nokia 3310'
-    }
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310'
+#     }
 
 # phone = telefonlar['ali']
 # print(f"Alining telefoni {phone}")
@@ -42,5 +42,51 @@ telefonlar = {
 # phone = telefonlar.get('hasan','Bunday ism mavjud emas')
 # print(phone)
 
-phone = telefonlar.get('hasan')
-print(phone)
+# phone = telefonlar.get('hasan')
+# print(phone)
+
+# ===-=== Home Work ===-===
+# ==-== N-1 ==-==
+# father = {
+#     'Name':'Akrom',
+#     'years':'1958',
+#     'city':'Samarkand'
+# }
+
+# print(f"My father's name {father['Name']}, born in {father['years']}, in the city of {father['city']}")
+
+# ==-== N-2 ==-==
+# favoriteFoods = {
+#     'Ali':'Osh',
+#     'Kamola':'Ikra',
+#     'Akram':'Manti',
+#     'Zuxra':'Baliq',
+#     'Nasrullo':'Baray'
+# }
+
+# print(f"Brother's favorite food {favoriteFoods['Ali']},\
+#     Sister's favorite food {favoriteFoods['Kamola']},\
+#     Father's favorite food {favoriteFoods['Akram']}")
+
+# ==-== N-3 ==-==
+dic = {
+    'integer':'butun sonlar',
+    'float':'qoldiqli sonlar',
+    'string':'satirli malumot',
+    'if':'mantiqiy operator',
+    'else':'mantiqiy operator',
+    'swich':'mantiqiy operator',
+    'variable':'ozgaruvchi',
+    'arrays':'masivlar',
+    'function':'funksiya',
+    'liner_function':'chiziqli funksiya'
+}
+
+word = input('Kalit so`z kiriting: ')
+# print(dic[word])
+keyWord = dic.get(word)
+
+if keyWord == None:
+    print('Bunday so`z mavjud emas')
+else:
+    print(f"{word.title()} so'zi {keyWord} deb tarjima qilinadi")
