@@ -79,22 +79,81 @@
 
 # ===-=== Home Work ===-===
 # ==-== N-1 ==-==
-dic = {
-    'integer':'butun sonlar',
-    'float':'qoldiqli sonlar',
-    'string':'satirli malumot',
-    'if':'mantiqiy operator',
-    'else':'mantiqiy operator',
-    'swich':'mantiqiy operator',
-    'variable':'ozgaruvchi',
-    'arrays':'masivlar',
-    'function':'funksiya',
-    'liner_function':'chiziqli funksiya'
-    }
+# dic = {
+#     'integer':'butun sonlar',
+#     'float':'qoldiqli sonlar',
+#     'string':'satirli malumot',
+#     'if':'mantiqiy operator',
+#     'else':'mantiqiy operator',
+#     'swich':'mantiqiy operator',
+#     'variable':'ozgaruvchi',
+#     'arrays':'masivlar',
+#     'function':'funksiya',
+#     'liner_function':'chiziqli funksiya'
+#     }
 
-diction = {}
 
-for word in sorted(dic):
-    diction.append(word)
+# sorted_words = sorted(dic.items())
+# for word, val in sorted_words:
+#     print(f"{word.title()} - {val.title()}")
 
-print(diction)
+
+# ==-== N-2A ==-==
+# countries = {
+#     'Uzbekistan':'Tashkent',
+#     'Kazakstan':'Nursulton',
+#     'Tajikistan':'Dushanbe',
+#     'Russia':'Moscow',
+#     'Albania':'Tirana'
+# }
+
+# countrie = sorted(countries.keys())
+# capital = sorted(countries.values())
+
+# print('Countres:')
+# for countr in countrie:
+#     print(countr.upper())
+
+# print(f'\nCapitals:')
+# for i in capital:
+#     print(i)
+
+# ==-== N-2B ==-==
+# countries = {
+#     'Uzbekistan':'Tashkent',
+#     'Kazakstan':'Nursulton',
+#     'Tajikistan':'Dushanbe',
+#     'Russia':'Moscow',
+#     'Albania':'Tirana'
+# }
+# countrie = input('Which country do you wont know: ').title()
+# if countrie in countries:
+#     print(countries[countrie])
+# else:
+#     print("Sorry, we don't have that information")
+
+# ==-== N-3 ==-==
+menu = {
+    'freas':25,
+    'pizza':30,
+    'hotdog':35,
+    'burger':30,
+    'cheezburger':35,
+    'sendvich':25,
+    'soup':30,
+    'creemsoup':60,
+    'beefshtecks':125,
+    'juice':15
+}
+
+foods = {}
+print('Please enter 3 foods: ')
+foods[0] = input('1-food: ')
+foods[1] = input('2-food: ')
+foods[2] = input('3-food: ')
+
+# for 
+if foods.values() in menu.keys():
+    print(f"{foods.title()} {menu.values()} $")
+else:
+    print('Sorry we has not this food!')
