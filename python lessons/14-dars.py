@@ -92,11 +92,14 @@
 #     'liner_function':'chiziqli funksiya'
 #     }
 
-
+# =-= 1 method =-=
 # sorted_words = sorted(dic.items())
 # for word, val in sorted_words:
 #     print(f"{word.title()} - {val.title()}")
 
+# =-= 2 method =-=
+# for word, val in sorted(dic.items()):
+#     print(f"{word.title()} - {val}")
 
 # ==-== N-2A ==-==
 # countries = {
@@ -146,14 +149,33 @@ menu = {
     'juice':15
 }
 
-foods = {}
-print('Please enter 3 foods: ')
-foods[0] = input('1-food: ')
-foods[1] = input('2-food: ')
-foods[2] = input('3-food: ')
+# =-= 1 method =-=
 
-# for 
-if foods.values() in menu.keys():
-    print(f"{foods.title()} {menu.values()} $")
-else:
-    print('Sorry we has not this food!')
+# foods = {}
+# print('Please enter 3 foods: ')
+# foods[1] = input('1-food: ')
+# foods[2] = input('2-food: ')
+# foods[3] = input('3-food: ')
+
+# # print(foods.values())
+# for i in foods.values():
+#     food = menu.get(i)
+#     # print(food)
+#     if food == None:
+#         print(f"Sorry we has not {i}!")
+        
+#     else:
+#         print(f"{i} : {food} $")
+
+
+# =-= 2 method =-=
+print('Please enter 3 foods: ')
+foods = []
+for i in range(3):
+    foods.append(input(f"{i+1}-foods:").lower())
+
+for food in foods:
+    if food in menu:
+        print(f"{food.title()} {menu[food]} $")
+    else:
+        print(f"Sorry we has not {food}.")
