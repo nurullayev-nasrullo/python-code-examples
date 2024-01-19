@@ -198,4 +198,7 @@ countries = {
 }
 
 for country, item in countries.items():
-    print(f"\n{country.title()} capital is {item['capital'].title()}")
+    print(f"\n{country.title()} capital is {item['capital'].title()}"
+          f"\nArea: {item['area']} kv"
+          f"\nPopulation: {item['population']}"
+          f"\nCurrency: {item['currency'].upper()}")
