@@ -130,7 +130,7 @@
 #     'born':'1955',
 #     'city':'San Francisco',
 #     'old':'56 died',
-#     'jobs':['Apple', 'iMac', 'iPod']
+#     'jobs':['Apple', 'iMac', 'iPad']
 # }
 # tim = {
 #     'name':'Tim Berners-Lee',
@@ -156,16 +156,35 @@
 
 # it_greats = [jobs, tim, bill, james]
 
+# =-= method 1 =-=
 # for person in it_greats:
 #     print(f"{person['name'].title()}, "
 #           f"was born is {person['born']}, "
 #           f"{person['city']}, he is {person['old']} old")
 
+# =-= method 2 =-=
+# for person in it_greats:
+#     name = person['name']
+#     born = person['born']
+#     city = person['city']
+#     old = person['old']
+#     print(f"{name} was born is {born}, {city}"
+#           f"he is {old} years old.")
+
 # ==-== N2 ==-==
+# =-= method 1 =-=
 # for person in it_greats:
 #     print(f"\n{person['name'].title()} jobs:")
 #     for j in person['jobs']:
 #         print(j)
+
+# =-= method 2 =-=
+# for person in it_greats:
+#     name = person['name']
+#     jobs = person['jobs']
+#     print(f"\n{name} jobs:")
+#     for job in jobs:
+#         print(job)
 
 # ==-== N3 ==-==
 # films = {
@@ -179,26 +198,54 @@
 #         print(i.title())
 
 # ==-== N4 ==-==
-countries = {
-    'uzbekistan':{'capital':'tashkent',
-                  'area':'448978',
-                  'population':'33000000',
-                  'currency':'sum'
-                },
-    'russia':{'capital':'moscow',
-                  'area':'17098246',
-                  'population':'147182123',
-                  'currency':'rub'
-                },
-    'united states':{'capital':'washington',
-                  'area':'9833520',
-                  'population':'334914895',
-                  'currency':'usd'
-                }
-}
+# countries = {
+#     'uzbekistan':{'capital':'tashkent',
+#                   'area':'448978',
+#                   'population':'33000000',
+#                   'currency':'sum'
+#                 },
+#     'russia':{'capital':'moscow',
+#                   'area':'17098246',
+#                   'population':'147182123',
+#                   'currency':'rub'
+#                 },
+#     'usa':{'capital':'washington',
+#                   'area':'9833520',
+#                   'population':'334914895',
+#                   'currency':'usd'
+#                 }
+# }
 
-for country, item in countries.items():
-    print(f"\n{country.title()} capital is {item['capital'].title()}"
-          f"\nArea: {item['area']} kv"
-          f"\nPopulation: {item['population']}"
-          f"\nCurrency: {item['currency'].upper()}")
+
+# for country, item in countries.items():
+#     if country.lower() == 'usa':
+#         country = country.upper()
+#     else:
+#         country = country.capitalize()
+#     print(f"\n{country} capital is {item['capital'].title()}"
+#           f"\nArea: {item['area']} kv"
+#           f"\nPopulation: {item['population']}"
+#           f"\nCurrency: {item['currency'].upper()}")
+
+# ==-== N5 ==-==
+# =-= method 1 =-=
+# users_input = input('Enter country: ')
+# user = countries.get(users_input)
+# # print(user)
+# if user == None:
+#     print("We don't have this country information!")
+# else:
+#    print(f"{users_input.title()}")
+#    for item, val in user.items():
+#       print(f"{item.title()} : {val.title()}")
+
+# =-= method 2 =-=
+# users_input = input('Enter country: ').lower()
+# if users_input in countries:
+#     info = countries[users_input]
+#     print(f"{users_input.capitalize()} capital is {info['capital'].title()}"
+#           f"\nArea: {info['area']} kv"
+#           f"\nPopulation: {info['population']}"
+#           f"\nCurrency: {info['currency'].upper()}")
+# else:
+#     print("We don't have this country information!")
