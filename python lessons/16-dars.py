@@ -109,9 +109,52 @@
 #         break # cycle stop
 
 # ==-== N2 ==-==
-age = 'Enter your age '
-age += "If you want to stop enter 'exit' or 'quit' "
+# age = 'Enter your age '
+# age += "If you want to stop enter 'exit' or 'quit' "
 
-while True:
-    ticket = input(age)
+# while True:
+#     text = input(age)
+#     if text == 'exit' or text == 'quit':
+#         break
+#     ticket = int(text)
     
+#     if ticket < 7:
+#         print('20 $')
+#     elif ticket < 18:
+#         print('30 $')
+#     elif ticket < 65:
+#         print('100 $')
+#     else:
+#         print('you can enter free')
+
+
+# ==-== N3 ==-==
+# savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+# savol += "Musbat son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         break
+#     son = int(qiymat)
+#     if son < 0:
+#         continue
+#     else:
+#         ildiz = float(qiymat)**(0.5)
+#         print(f"{qiymat} ning ildizi {ildiz} ga teng")
+
+# =-= second method =-=
+# savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+# savol += "Musbat son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+# while True:
+#     qiymat = input(savol)
+#     if qiymat=='exit':
+#         break
+#     elif float(qiymat)<0:
+#         continue # agar foydalanuvchi manfiy son kiritsa tsiklni takrorlaymiz
+#     else:
+#         ildiz = float(qiymat)**(0.5)
+#         print(f"{qiymat} ning ildizi {ildiz} ga teng")
