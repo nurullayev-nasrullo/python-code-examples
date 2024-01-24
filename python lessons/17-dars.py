@@ -51,18 +51,83 @@
 
 # ===-=== Home works ===-===
 # ==-== N1 ==-==
-orders = []
-print("Enter your orders ")
-n=1
-while True:
-    question = f"Enter {n}-food:"
-    order = input(question)
-    orders.append(order)
-    answer = input("Do you want mor food? (yes/no)")
-    if answer =='yes':
-        n+=1
-        continue
-    else:
-        break
+# orders = []
+# print("Enter your orders ")
+# n=1
+# while True:
+#     question = f"Enter {n}-food:"
+#     order = input(question)
+#     orders.append(order)
+#     answer = input("Do you want mor food? (yes/no)")
+#     if answer =='yes':
+#         n+=1
+#         continue
+#     else:
+#         break
 
-print(f"Your orders: {orders}")
+# =-= 2 method =-=
+# orders = []
+# while True:
+#     question = input("Enter your orders: ")
+#     orders.append(question)
+#     answer = input("Do you want any orders? (yes/no)")
+#     if answer != 'yes':
+#         break
+
+# print(f"Your orders: {orders}")
+
+# ==-== N2 ==-==
+# print("Products")
+# products = {}
+# meaning = True
+# while meaning:
+#     product = input("Enter product name: ")
+#     price = input(f"{product.title()} price: ")
+#     products[product] = int(price)
+    
+#     answer = input("Do you want enter any product? (yes/no)")
+#     if answer == "no":
+#         meaning = False
+
+# for product, price in products.items():
+#     print(f"{product.title()} price: {price}")
+
+# ==-== N3 ==-==
+# orders = []
+# print("Enter your orders ")
+# n=1
+# while True:
+#     question = f"Enter {n}-food:"
+#     order = input(question)
+#     orders.append(order)
+#     answer = input("Do you want mor food? (yes/no)")
+#     if answer =='yes':
+#         n+=1
+#         continue
+#     else:
+#         break
+
+# products = {
+#     'banana':5,
+#     'pineapple':8,
+#     'kiwi':6,
+#     'bread':3,
+#     'sausage':10
+# }
+
+# while orders:
+#     order = orders.pop()
+#     product = products.get(order)
+#     if product == None:
+#         print(f"We have not {order}")
+#     else:
+#         print(f"{order} price: {product}")
+
+# =-= 2 method =-=
+# while orders:
+#     order = orders.pop()
+#     if order in products.keys():
+#         price = products[order]
+#         print(f"{order.title()} price: {price} $")
+#     else:
+#         print(f"We have not {order}")
