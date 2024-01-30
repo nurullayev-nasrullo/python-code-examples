@@ -80,7 +80,7 @@
 
 # ===-=== Home works ===-===
 # ==-== N1 ==-==
-# def user_info(ismi, familiya, tug_yili, tug_joyi, email=None, telefon=None):
+# def user_info(ismi, familiya, tug_yili, tug_joyi, email="", telefon=None):
 #     user = {'ism':ismi,
 #             'familiya':familiya,
 #             'tugilgan yili':tug_yili,
@@ -147,14 +147,18 @@
 # ==-== N5 ==-==
 # def tub_sonlar(a,z):
 #     sonlar = [] # bo'sh ro'yxat
-#     while a<z:
-#         if a % 2 == 0:
-#             continue
-#         elif a % 3 == 0:
-#             continue
-#         elif a % 1 and a % a:
-#             sonlar.append(a)
-#         a += 1
+#     for i in range(a, z+1):
+#         tub = True
+#         if i == 1:
+#             tub = False
+#         elif i == 2:
+#             tub = True
+#         else:
+#             for x in range(2, i):
+#                 if i % x == 0:
+#                     tub = False
+#         if tub:
+#             sonlar.append(i)
 #     return sonlar
 
 # a = int(input('1-sonni kiriting: '))
@@ -163,11 +167,15 @@
 # print(tub_son)
 
 # ==-== N6 ==-==
-def fibanachi(f):
-    for i in range(1,f):
-        if i+1 / i == 1.6:
-            return i
+# def fibanachi(f):
+#     numbers = []
+#     for i in range(f):
+#         if i == 0 or i == 1:
+#             numbers.append(1)
+#         else:
+#             numbers.append(numbers[i - 1] + numbers[i - 2])
+#     return numbers
         
-f = int(input('istalgan raqam kiriting: '))
-fibo = fibanachi(f)
-print(fibo)
+# f = int(input('istalgan raqam kiriting: '))
+# fibo = fibanachi(f)
+# print(fibo)
