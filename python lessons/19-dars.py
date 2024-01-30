@@ -93,13 +93,13 @@
 # ==-== N2 ==-==
 # mijozlar = []
 # while True:
-#     print("\nQuyidagi ma'lumotlarni kiriting",end='')
-#     ismi=input("\nIsmingizni kiriting: ")
-#     familiya=input("Familiyanizni kiriting: ")
-#     tug_yili=int(input("Tug'ilgan yilinizni kiriting: "))
-#     tug_joyi=input("Tug'ilgan joyingizni kiriting: ")
-#     email=input("emailingizni kiriting: ")
-#     telefon=input("Telefon raqamingizni kiriting: ")
+#     print("\nQuyidagi ma'lumotlarni kiriting")
+#     ismi=input("Ism kiriting: ")
+#     familiya=input("Familiya kiriting: ")
+#     tug_yili=int(input("Tug'ilgan yilini kiriting: "))
+#     tug_joyi=input("Tug'ilgan joyini kiriting: ")
+#     email=input("emailni kiriting: ")
+#     telefon=input("Telefon raqamini kiriting: ")
     
 #     #Foydalanuvchi kiritdan ma'lumotlardan user_info yordamida 
 #     #lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
@@ -112,18 +112,6 @@
 
 # print('\nMijozlar:')
 # for user in mijozlar:
-#     if user['email'] and user['telefon']:
-#         email = user['email']
-#         telefon = user['telefon']
-#     elif user['telefon'] and user['email'] == None:
-#         telefon = user['telefon']
-#         email = "Noma'lum"
-#     elif user['telefon'] == None and user['email']:
-#         email = user['email']
-#         telefon = "Noma'lum"
-#     else:
-#         email = "Noma'lum"
-#         telefon = "Noma'lum"
 #     print(f"{user['ism'].title()} {user['familiya'].title()}, {user['tugilgan yili']} yilda {user['tugilgan joyi'].title()}da tug'ilgan, email manzili: {user['email']}, telefon raqami: {user['telefon']}, yoshi: {user['yoshi']}")
 
 # ==-== N3 ==-==
@@ -157,19 +145,29 @@
 # print(f"Aylana R: {R['radiusi']}, D: {R['diametri']}, P: {R['perimetri']}, S: {R['yuzi']}")
 
 # ==-== N5 ==-==
-def tub_sonlar(a,z):
-    sonlar = [] # bo'sh ro'yxat
-    while a<z:
-        if a % 2 == 0:
-            continue
-        elif a % 3 == 0:
-            continue
-        elif a % 1 and a % a:
-            sonlar.append(a)
-        a += 1
-    return sonlar
+# def tub_sonlar(a,z):
+#     sonlar = [] # bo'sh ro'yxat
+#     while a<z:
+#         if a % 2 == 0:
+#             continue
+#         elif a % 3 == 0:
+#             continue
+#         elif a % 1 and a % a:
+#             sonlar.append(a)
+#         a += 1
+#     return sonlar
 
-a = int(input('1-sonni kiriting: '))
-z = int(input('2-sonni kiriting: '))
-tub_son = tub_sonlar(a,z)
-print(tub_son)
+# a = int(input('1-sonni kiriting: '))
+# z = int(input('2-sonni kiriting: '))
+# tub_son = tub_sonlar(a,z)
+# print(tub_son)
+
+# ==-== N6 ==-==
+def fibanachi(f):
+    for i in range(1,f):
+        if i+1 / i == 1.6:
+            return i
+        
+f = int(input('istalgan raqam kiriting: '))
+fibo = fibanachi(f)
+print(fibo)
