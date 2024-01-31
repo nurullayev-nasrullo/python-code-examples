@@ -44,13 +44,12 @@
 # print(summa(1,2,3,4,5))
 
 # ==-== N2 ==-==
-def avto_info(ismi,familiyasi,**malumotlar):
-    """Avto haqidagi ma'lumotlarni lug'at ko'rinishdia qaytaruvchi funksiya"""
-    malumotlar['ism']=ismi
-    malumotlar['familiya']=familiyasi
+def talaba_info(ism,familiya,**malumotlar):
+    """Talabalar haqidagi ma'lumotlarni lug'at ko'rinishdia qaytaruvchi funksiya"""
+    malumotlar['ism']=ism
+    malumotlar['familiya']=familiya
     return malumotlar
 
-avto1 = avto_info("GM", "malibu", rang='qora', yil=2018)
-avto2 = avto_info("Kia", "K5", rang='qizil', narh=35000)
+talaba = talaba_info("Nuruddin", "Qobilov", tug_yil=2000, yosh=2024-2000)
 
-print(avto2)
+print(talaba)
