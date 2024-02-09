@@ -15,32 +15,32 @@
 # son = 20
 # print(son.lower())
 
-class Talaba:
-    """Talaba nomli klass yaratamiz"""
-    def __init__(self,ism,familiya,tyil):
-        """Talabaning xususiyatlari"""
-        self.ism = ism
-        self.familiya = familiya
-        self.tyil = tyil
+# class Talaba:
+#     """Talaba nomli klass yaratamiz"""
+#     def __init__(self,ism,familiya,tyil):
+#         """Talabaning xususiyatlari"""
+#         self.ism = ism
+#         self.familiya = familiya
+#         self.tyil = tyil
     
-    def get_name(self):
-        """Talabaning ismini qaytaradi"""
-        return self.ism
+#     def get_name(self):
+#         """Talabaning ismini qaytaradi"""
+#         return self.ism
     
-    def get_lastname(self):
-        """Talabaning familiyasini qaytaradi"""
-        return self.familiya
+#     def get_lastname(self):
+#         """Talabaning familiyasini qaytaradi"""
+#         return self.familiya
     
-    def get_fullname(self):
-        """Talabaning ism-familiyasini qaytaradi"""
-        return f"{self.ism} {self.familiya}"
+#     def get_fullname(self):
+#         """Talabaning ism-familiyasini qaytaradi"""
+#         return f"{self.ism} {self.familiya}"
     
-    def get_age(self,yil):
-        """Talabaning yoshini qaytaradi"""
-        return yil-self.tyil
+#     def get_age(self,yil):
+#         """Talabaning yoshini qaytaradi"""
+#         return yil-self.tyil
     
-    def tanishtir(self):
-        print(f"Ismim {self.ism} {self.familiya}. {self.tyil} yilda tu'gilganman")
+#     def tanishtir(self):
+#         print(f"Ismim {self.ism} {self.familiya}. {self.tyil} yilda tu'gilganman")
 
 
 # talaba1 = Talaba("Alijon","Valiyev",2000)
@@ -67,31 +67,29 @@ class Talaba:
 
 
 class User:
-    def __int__(self,name,username,email):
+    def __init__(self,name,username,email):
         self.name = name
         self.uname = username
         self.mail = email
 
     def get_name(self):
-        """Talabaning ismini qaytaradi"""
         return self.name
     
     def get_uname(self):
-        """Talabaning ismini qaytaradi"""
         return self.uname
     
     def get_email(self):
-        """Talabaning ismini qaytaradi"""
         return self.mail
     
-    def describe():
-        pass
-    
-    def get_email():
-        pass
-
-
     def get_info(self):
         print(f"Foydalanuchi: {self.uname}, ismi: {self.name}, email: {self.mail}")
 
 
+user1 = User("Alijon Valiyev", "alijon1994", "alijon1994@gmail.com")
+user1.get_info()
+
+user2 = User("Surayyo Holova", "suholova", "suholova@gmail.com")
+print(user2.get_email())
+
+user3 = User("Karimov Sunnat", 'sunnat_karimov', 'sunnat_karimov@gmai.com')
+print(user3.name)
