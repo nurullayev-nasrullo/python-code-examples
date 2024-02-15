@@ -166,8 +166,36 @@ class Avto:
         self.kilometer += kilometer
     
     def get_info(self):
-        print(f"Modeli: {self.model}, rangi: {self.rang}, karobka: {self.karobka}, narhi: {self.narh} so'm")
+        print(f"Modeli: {self.model}, rangi: {self.rang}, karobka: {self.karobka}, narhi: {self.narh} $")
 
 
+
+class Avtosalon:
+    def __init__(self,name,adress):
+        self.name=name
+        self.adress=adress
+        self.cars=[]
+
+    def add_cars(self,car):
+        self.cars.append(car)
+
+    def get_name(self):
+        return self.name
+    
+    def get_adress(self):
+        return self.adress
+    
+    def get_info(self):
+        print(f"")
+        
+    def get_students(self):
+        return [x.get_info() for x in self.cars]
+    
+
+avto1 = Avto("cobalt","qora","avto",25000)
+# print(avto1.get_narh)
+
+# print(avto1.__dir__)
+# print(avto1.__dict__)
 
     
