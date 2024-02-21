@@ -194,7 +194,6 @@ salon1 + avto7
 
 avto_new = Avto("Mercedes-Benz", 'E200','Silver',2015,80000)
 salon1(avto_new) # Yangi avto qo'shamiz
-salon1() # salondagi mashinalarni ko'ramiz
 
 
 # ==-== Home work ==-==
@@ -217,6 +216,9 @@ class Talaba(Shaxs):
         super().__init__(ism, familiya, passport, tyil)
         self.bosqich = bosqich
 
+    def __rerp__(self):
+        return f"{self.ism} {self.familiya}"
+    
     def __lt__(self,boshqa_talaba):
         """Kichik"""
         return self.bosqich < boshqa_talaba.bosqich
@@ -231,20 +233,47 @@ class Fan:
         self.name = name
         self.talabalar = []
 
-    def add_student(self):
-        pass
+    def add_student(self,*qiymat):
+        for student in qiymat: 
+            if isinstance(student,Talaba):
+                self.talabalar.append(student)
+            else:
+                print("Talaba obyketini kiriting")
+                
+                
 
-    def __getitem__(self):
-        pass
+    def __getitem__(self,index):
+        return self.talabalar[index]
 
-    def __setitem__(self):
-        pass
+    def __setitem__(self,index,value):
+        if isinstance(value,Talaba):
+            self.talabalar[index]=value
 
     def __len__(self):
         return len(self.talabalar)
     
+    def __add__(self,qiymat):
+        if isinstance(qiymat,Fan):
+            yangi_talabalar =  Fan(f"{self.name} {qiymat.name}")
+            yangi_talabalar.talabalar = self.talabalar + qiymat.talabalar
+            return yangi_talabalar
+        
+    # def __sub__(self,passport):
+    #     if isinstance(passport,Talaba):
+    #         new_talabalar = 
+    
+    def __call__(self,*param):
+        if param: # agar parametr bo'lsa
+            for stud in param:
+                self.__add__(stud)
+        else: # agar parametr bo'lmasa
+            return [stud for stud in self.talabalar]
+    
+
+matematika = Fan("matematika")
 
 talaba1 = Talaba("Alijon","aliyev","ff86546",1992,2)
 talaba2 = Talaba("valijon","shamsiyev","aa86464",2000)
+matematika.add_student(talaba1,talaba2)
 # print(talaba1==talaba2)
 # print(talaba1>talaba2)
