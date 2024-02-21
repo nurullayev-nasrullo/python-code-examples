@@ -2,7 +2,7 @@
 """
 Created on Wed Aug 16 10:39:24 2023
 
-@author: Nikamed
+@author: Nasrullo Nurullayev
 """
 
 # ism = "Ahad"

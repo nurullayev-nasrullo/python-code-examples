@@ -1,0 +1,6 @@
+with
+pickle
+w - write
+r - read
+dump
+load

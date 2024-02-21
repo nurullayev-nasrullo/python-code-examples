@@ -2,7 +2,7 @@
 """
 Created on Wed Sep 13 16:31:51 2023
 
-@author: Nikamed
+@author: Nasrullo Nurullayev
 """
 
 # mehmonlar = ['Ali','Vali','Hasan', 'Husan','Olim']

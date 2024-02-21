@@ -2,7 +2,7 @@
 """
 Created on Sat Sep  9 10:40:42 2023
 
-@author: Nikamed
+@author: Nasrullo Nurullayev
 """
 
 # a = 20  # Sonlar musbat yoko

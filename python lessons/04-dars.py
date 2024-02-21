@@ -2,7 +2,7 @@
 """
 Created on Tue Jul 18 14:06:04 2023
 
-@author: Nikamed
+@author: Nasrullo Nurullayev
 """
 
 radius = 5

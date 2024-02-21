@@ -2,7 +2,7 @@
 """
 Created on Sat Sep  9 13:27:44 2023
 
-@author: Nikamed
+@author: Nasrullo Nurullayev
 """
 
 # mevalar = ['olma', 'anjir', 'shaftoli', "o'rik"] # mevalar ro'yxati (matnlar)

@@ -2,7 +2,7 @@
 """
 Created on Wed Sep 13 14:34:12 2023
 
-@author: Nikamed
+@author: Nasrullo Nurullayev
 """
 
 # cars = ['bmw','mercedes benz', 'volvo', 'general motors', 'tesla', 'audi']
